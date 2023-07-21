@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11019BC22A68FEF70023B0B4 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11019BC12A68FEF70023B0B4 /* MenuList.swift */; };
 		11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1826E2A679735001CF159 /* My_FavouriteApp.swift */; };
 		11B182712A679735001CF159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B182702A679735001CF159 /* ContentView.swift */; };
 		11B182732A679736001CF159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B182722A679736001CF159 /* Assets.xcassets */; };
 		11B182762A679736001CF159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B182752A679736001CF159 /* Preview Assets.xcassets */; };
+		11D211952A67B2010038DCBF /* Zeyada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D211942A67B2010038DCBF /* Zeyada-Regular.ttf */; };
+		11D211972A67B2110038DCBF /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D211962A67B2110038DCBF /* AbrilFatface-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11019BC12A68FEF70023B0B4 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		11B1826B2A679735001CF159 /* My Favourite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Favourite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B1826E2A679735001CF159 /* My_FavouriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_FavouriteApp.swift; sourceTree = "<group>"; };
 		11B182702A679735001CF159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11B182722A679736001CF159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B182752A679736001CF159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11D211942A67B2010038DCBF /* Zeyada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zeyada-Regular.ttf"; sourceTree = "<group>"; };
+		11D211962A67B2110038DCBF /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
+		11D211982A67B2670038DCBF /* My-Favourite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "My-Favourite-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,11 @@
 		11B1826D2A679735001CF159 /* My Favourite */ = {
 			isa = PBXGroup;
 			children = (
+				11D211982A67B2670038DCBF /* My-Favourite-Info.plist */,
+				11D211932A67B1DD0038DCBF /* Font */,
 				11B1826E2A679735001CF159 /* My_FavouriteApp.swift */,
 				11B182702A679735001CF159 /* ContentView.swift */,
+				11019BC12A68FEF70023B0B4 /* MenuList.swift */,
 				11B182722A679736001CF159 /* Assets.xcassets */,
 				11B182742A679736001CF159 /* Preview Content */,
 			);
@@ -65,6 +75,15 @@
 				11B182752A679736001CF159 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11D211932A67B1DD0038DCBF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				11D211962A67B2110038DCBF /* AbrilFatface-Regular.ttf */,
+				11D211942A67B2010038DCBF /* Zeyada-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B182762A679736001CF159 /* Preview Assets.xcassets in Resources */,
+				11D211952A67B2010038DCBF /* Zeyada-Regular.ttf in Resources */,
 				11B182732A679736001CF159 /* Assets.xcassets in Resources */,
+				11D211972A67B2110038DCBF /* AbrilFatface-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B182712A679735001CF159 /* ContentView.swift in Sources */,
+				11019BC22A68FEF70023B0B4 /* MenuList.swift in Sources */,
 				11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +292,7 @@
 				DEVELOPMENT_TEAM = 6ML42S8L24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My-Favourite-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +322,7 @@
 				DEVELOPMENT_TEAM = 6ML42S8L24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My-Favourite-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
