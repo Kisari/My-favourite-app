@@ -8,16 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		11019BC22A68FEF70023B0B4 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11019BC12A68FEF70023B0B4 /* MenuList.swift */; };
+		115761C22A6A1E810040F483 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 115761C12A6A1E810040F483 /* data.json */; };
+		117DC15D2A775DD600C14E17 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC15C2A775DD600C14E17 /* MapView.swift */; };
+		117DC15F2A775ED500C14E17 /* MenuSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC15E2A775ED500C14E17 /* MenuSelectRow.swift */; };
+		117DC1672A77755A00C14E17 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC1662A77755A00C14E17 /* CircleImage.swift */; };
+		117DC1692A777DEB00C14E17 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC1682A777DEB00C14E17 /* ItemDetails.swift */; };
+		117DC16B2A77930100C14E17 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC16A2A77930100C14E17 /* InfoRow.swift */; };
+		117DC16D2A78BB4100C14E17 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC16C2A78BB4100C14E17 /* GlobalFunc.swift */; };
 		11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1826E2A679735001CF159 /* My_FavouriteApp.swift */; };
 		11B182712A679735001CF159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B182702A679735001CF159 /* ContentView.swift */; };
 		11B182732A679736001CF159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B182722A679736001CF159 /* Assets.xcassets */; };
 		11B182762A679736001CF159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B182752A679736001CF159 /* Preview Assets.xcassets */; };
 		11D211952A67B2010038DCBF /* Zeyada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D211942A67B2010038DCBF /* Zeyada-Regular.ttf */; };
 		11D211972A67B2110038DCBF /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D211962A67B2110038DCBF /* AbrilFatface-Regular.ttf */; };
+		11D4B18F2A6A25B1006AD18C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4B18E2A6A25B1006AD18C /* MenuItem.swift */; };
+		11D4B1932A6A296B006AD18C /* FoodPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4B1922A6A296B006AD18C /* FoodPlace.swift */; };
+		11D4B1952A6A29B1006AD18C /* LoadFoodPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4B1942A6A29B1006AD18C /* LoadFoodPlaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11019BC12A68FEF70023B0B4 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		115761C12A6A1E810040F483 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		117DC15C2A775DD600C14E17 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		117DC15E2A775ED500C14E17 /* MenuSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectRow.swift; sourceTree = "<group>"; };
+		117DC1662A77755A00C14E17 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		117DC1682A777DEB00C14E17 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		117DC16A2A77930100C14E17 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		117DC16C2A78BB4100C14E17 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 		11B1826B2A679735001CF159 /* My Favourite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Favourite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B1826E2A679735001CF159 /* My_FavouriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_FavouriteApp.swift; sourceTree = "<group>"; };
 		11B182702A679735001CF159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,7 +42,10 @@
 		11B182752A679736001CF159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11D211942A67B2010038DCBF /* Zeyada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zeyada-Regular.ttf"; sourceTree = "<group>"; };
 		11D211962A67B2110038DCBF /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
-		11D211982A67B2670038DCBF /* My-Favourite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "My-Favourite-Info.plist"; sourceTree = SOURCE_ROOT; };
+		11D211982A67B2670038DCBF /* My-Favourite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My-Favourite-Info.plist"; sourceTree = SOURCE_ROOT; };
+		11D4B18E2A6A25B1006AD18C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		11D4B1922A6A296B006AD18C /* FoodPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPlace.swift; sourceTree = "<group>"; };
+		11D4B1942A6A29B1006AD18C /* LoadFoodPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFoodPlaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +59,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117DC1572A775A7B00C14E17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				117DC1592A775B0C00C14E17 /* Screen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		117DC1582A775AED00C14E17 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				11D4B1922A6A296B006AD18C /* FoodPlace.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		117DC1592A775B0C00C14E17 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				11D4B18E2A6A25B1006AD18C /* MenuItem.swift */,
+				11019BC12A68FEF70023B0B4 /* MenuList.swift */,
+				117DC15C2A775DD600C14E17 /* MapView.swift */,
+				117DC15E2A775ED500C14E17 /* MenuSelectRow.swift */,
+				117DC1662A77755A00C14E17 /* CircleImage.swift */,
+				117DC1682A777DEB00C14E17 /* ItemDetails.swift */,
+				117DC16A2A77930100C14E17 /* InfoRow.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		117DC15A2A775BD000C14E17 /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				11D4B1942A6A29B1006AD18C /* LoadFoodPlaces.swift */,
+				115761C12A6A1E810040F483 /* data.json */,
+				117DC16C2A78BB4100C14E17 /* GlobalFunc.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
 		11B182622A679735001CF159 = {
 			isa = PBXGroup;
 			children = (
+				11D211982A67B2670038DCBF /* My-Favourite-Info.plist */,
 				11B1826D2A679735001CF159 /* My Favourite */,
 				11B1826C2A679735001CF159 /* Products */,
 			);
@@ -58,11 +119,12 @@
 		11B1826D2A679735001CF159 /* My Favourite */ = {
 			isa = PBXGroup;
 			children = (
-				11D211982A67B2670038DCBF /* My-Favourite-Info.plist */,
+				117DC15A2A775BD000C14E17 /* LifeCycle */,
 				11D211932A67B1DD0038DCBF /* Font */,
 				11B1826E2A679735001CF159 /* My_FavouriteApp.swift */,
 				11B182702A679735001CF159 /* ContentView.swift */,
-				11019BC12A68FEF70023B0B4 /* MenuList.swift */,
+				117DC1582A775AED00C14E17 /* Modal */,
+				117DC1572A775A7B00C14E17 /* View */,
 				11B182722A679736001CF159 /* Assets.xcassets */,
 				11B182742A679736001CF159 /* Preview Content */,
 			);
@@ -146,6 +208,7 @@
 			files = (
 				11B182762A679736001CF159 /* Preview Assets.xcassets in Resources */,
 				11D211952A67B2010038DCBF /* Zeyada-Regular.ttf in Resources */,
+				115761C22A6A1E810040F483 /* data.json in Resources */,
 				11B182732A679736001CF159 /* Assets.xcassets in Resources */,
 				11D211972A67B2110038DCBF /* AbrilFatface-Regular.ttf in Resources */,
 			);
@@ -158,9 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117DC15D2A775DD600C14E17 /* MapView.swift in Sources */,
 				11B182712A679735001CF159 /* ContentView.swift in Sources */,
+				11D4B1932A6A296B006AD18C /* FoodPlace.swift in Sources */,
+				117DC15F2A775ED500C14E17 /* MenuSelectRow.swift in Sources */,
+				117DC16D2A78BB4100C14E17 /* GlobalFunc.swift in Sources */,
+				11D4B18F2A6A25B1006AD18C /* MenuItem.swift in Sources */,
+				117DC1672A77755A00C14E17 /* CircleImage.swift in Sources */,
 				11019BC22A68FEF70023B0B4 /* MenuList.swift in Sources */,
+				117DC1692A777DEB00C14E17 /* ItemDetails.swift in Sources */,
+				117DC16B2A77930100C14E17 /* InfoRow.swift in Sources */,
 				11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */,
+				11D4B1952A6A29B1006AD18C /* LoadFoodPlaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
