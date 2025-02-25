@@ -5,10 +5,10 @@
 //  Created by Minh Trương on 31/07/2023.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
-struct Address: Identifiable{
+struct Address: Identifiable {
     let id = UUID()
     let name: String
     let coordinate: CLLocationCoordinate2D
@@ -19,7 +19,7 @@ struct MapView: View {
     var locationName: String
     @State private var region: MKCoordinateRegion
     @State private var annnotations: [Address]
-    
+
     init(locationCoordinates: CLLocationCoordinate2D, locationName: String) {
         self.locationCoordinates = locationCoordinates
         self.locationName = locationName
@@ -28,12 +28,12 @@ struct MapView: View {
             span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
         ))
         _annnotations = State(initialValue: [
-            Address(name: locationName, coordinate: locationCoordinates)
+            Address(name: locationName, coordinate: locationCoordinates),
         ])
     }
-    
+
     var body: some View {
-        Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, annotationItems: $annnotations){_ in
+        Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, annotationItems: $annnotations) { _ in
             MapMarker(coordinate: locationCoordinates)
         }
     }
@@ -44,5 +44,3 @@ struct MapView_Previews: PreviewProvider {
         MapView(locationCoordinates: CLLocationCoordinate2D(latitude: 20.865139, longitude: 106.683830), locationName: "testing")
     }
 }
-
-
