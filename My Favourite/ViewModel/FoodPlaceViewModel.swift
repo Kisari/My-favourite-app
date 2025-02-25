@@ -11,8 +11,9 @@ class FoodPlaceViewModel: ObservableObject {
     struct Configuration{
       var filename: String = "MockData.json"
     }
-    @Published var foodPlaces: [FoodPlace] = [FoodPlace]()
     private(set) var config: Configuration
+    @Published var foodPlaces: [FoodPlace] = [FoodPlace]()
+    @Published var searchInput = ""
     
     init() {
         config = Configuration()
@@ -40,7 +41,14 @@ class FoodPlaceViewModel: ObservableObject {
       } catch {
           fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
       }
-  }
+    }
+  
+    public func searchingResult() -> [FoodPlace]{
+      if(!searchInput.isEmpty){
+        return foodPlaces.filter{ $0.name.localizedCaseInsensitiveContains(searchInput)}
+      }
+      return foodPlaces
+    }
 }
 
 

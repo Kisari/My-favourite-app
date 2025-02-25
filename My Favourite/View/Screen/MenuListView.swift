@@ -12,14 +12,19 @@ struct MenuList: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.foodPlaces) { item in
+            List(viewModel.searchingResult()) { item in
                 NavigationLink {
                     MenuItem(item: item)
                 } label: {
                     MenuSelectRow(item: item)
                 }
-            }.navigationTitle("Minh's food places")
+            }
+            .navigationTitle("Minh's food places")
+            .navigationViewStyle(StackNavigationViewStyle())
         }
+        .searchable(text: $viewModel.searchInput,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Looking for places")
     }
 }
 

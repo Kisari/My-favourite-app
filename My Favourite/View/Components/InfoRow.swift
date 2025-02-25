@@ -13,7 +13,7 @@ struct InfoRow: View {
     var body: some View {
         Rectangle()
             .fill(Color("palette-4"))
-            .frame(width: .infinity, height: Constant.Spacing.xLarge)
+            .frame(width: Constant.Style.viewWidth, height: Constant.Spacing.xLarge)
             .overlay(
                 HStack {
                     Text(title)

@@ -9,8 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showInfo = false
-    private let screenHeight = UIScreen.main.bounds.size.height
-    private let screenWidth = UIScreen.main.bounds.size.width
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -27,7 +25,7 @@ struct MainView: View {
                             .padding(.bottom, 100)
                     }
                 }
-                .frame(width: screenWidth, height: screenHeight * 0.5)
+                .frame(width: Constant.Style.viewWidth, height: Constant.Style.viewHeight * 0.5)
                 ZStack {
                     VStack {
                         VStack {
@@ -47,6 +45,7 @@ struct MainView: View {
                         }
                         .padding(.leading, Constant.Spacing.xxLarge)
                         .padding([.bottom, .top], Constant.Spacing.xMedium)
+                      
                         NavigationLink(destination: MenuList().navigationBarBackButtonHidden(true)) {
                             Text("Start")
                                 .foregroundColor(Color(.white))
@@ -55,9 +54,11 @@ struct MainView: View {
                                 .padding(.vertical, Constant.Spacing.medium)
                         }
                         .cornerRadius(.infinity)
+                        .navigationViewStyle(StackNavigationViewStyle())
                         .overlay(
                             RoundedRectangle(cornerRadius: Constant.Spacing.small)
                                 .stroke(.white, lineWidth: 1))
+                      
                         HStack {
                             Spacer()
                             Button {
@@ -67,14 +68,21 @@ struct MainView: View {
                             }
                             .padding(.all, 5)
                             .alert(isPresented: $showInfo) {
-                                Alert(title: Text("Best food places"), message: Text("Welcome and let enjoy the best food places with real experience all over VietNam cities"), dismissButton: .default(Text("Lets go!")))
+                                Alert(title: Text("Best food places"), 
+                                      message: Text("Welcome and let enjoy the best food places with real experience all over VietNam cities"), 
+                                      dismissButton: Alert.Button.default(
+                                        Text("Let's go"), 
+                                        action: {
+                                          
+                                        }
+                                    ))
                             }
                             .cornerRadius(.infinity)
                         }
                         .padding([.trailing, .bottom], Constant.Spacing.large)
                     }
                 }
-                .frame(width: screenWidth, height: screenHeight * 0.5)
+                .frame(width: Constant.Style.viewWidth, height: Constant.Style.viewHeight * 0.5)
                 .background(Color("palette-3"))
             }
         }

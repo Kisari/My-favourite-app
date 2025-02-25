@@ -21,6 +21,7 @@ struct MapView: View {
     @State private var annnotations: [Address]
 
     init(locationCoordinates: CLLocationCoordinate2D, locationName: String) {
+        
         self.locationCoordinates = locationCoordinates
         self.locationName = locationName
         _region = State(initialValue: MKCoordinateRegion(
@@ -37,6 +38,7 @@ struct MapView: View {
             MapMarker(coordinate: locationCoordinates)
         }
     }
+  
 }
 
 struct MapView_Previews: PreviewProvider {

@@ -34,7 +34,7 @@ struct ImageFrame{
     case .circle:
       return ImageFrame(widthFrame: 100, heightFrame: 100)
     case .rectangle:
-      return ImageFrame(widthFrame: .infinity, heightFrame: 300)
+      return ImageFrame(widthFrame: Constant.Style.viewWidth, heightFrame: 300)
     }
   }
 }
