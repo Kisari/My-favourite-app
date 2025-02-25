@@ -20,32 +20,32 @@ struct MenuItem: View {
 
                         Rectangle()
                             .fill(Color("palette-4"))
-                            .cornerRadius(25)
+                            .cornerRadius(Constant.Spacing.normal)
                             .frame(height: 400)
-                            .offset(y: -25)
+                            .offset(y: -Constant.Spacing.normal)
                             .overlay(
                                 VStack {
                                     CustomImage(image: item.imageName, shape: "Circle")
-                                        .offset(y: -60)
-                                        .padding(.bottom, -60)
+                                        .offset(y: -Constant.Spacing.big)
+                                        .padding(.bottom, -Constant.Spacing.big)
                                     Text(item.name)
-                                        .font(.system(size: 28))
+                                        .font(.system(size: Constant.Spacing.normal))
                                         .bold()
                                         .foregroundColor(.white)
                                     Text(item.address)
-                                        .font(.system(size: 20))
+                                        .font(.system(size: Constant.Spacing.xMedium))
                                         .foregroundColor(.white)
-                                        .padding(.bottom, 40)
+                                        .padding(.bottom, Constant.Spacing.xLarge)
                                     InfoRow(title: "Walking time", content: "asd")
                                     InfoRow(title: "Distance", content: "asd")
-                                        .padding(.bottom, 20)
+                                        .padding(.bottom, Constant.Spacing.xMedium)
                                     NavigationLink(destination: ItemDetails(item: item).navigationBarBackButtonHidden(true)) {
                                         Text("Explore!")
                                             .frame(width: 300, height: 50)
                                             .background(Color(.red))
                                             .foregroundColor(.white)
                                             .bold()
-                                            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                                            .clipShape(RoundedRectangle(cornerRadius: Constant.Spacing.xMedium, style: .continuous))
                                     }
                                 },
                                 alignment: .top

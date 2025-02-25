@@ -11,11 +11,11 @@ struct ItemDetails: View {
     var item: FoodPlace
     var body: some View {
         HStack {
-            VStack(alignment: .leading, spacing: 10) {
+          VStack(alignment: .leading, spacing: Constant.Spacing.xSmall) {
                 VStack(alignment: .center) {
                     CustomImage(image: item.imageName, shape: "Rectangle")
                 }
-                HStack(spacing: 8) {
+                HStack(spacing: Constant.Spacing.small) {
                     VStack {
                         Text(item.name)
                             .bold()
@@ -31,11 +31,11 @@ struct ItemDetails: View {
                         .font(.subheadline)
                 }
             }
-            .padding(.all, 8)
+            .padding(.all, Constant.Spacing.small)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .padding(.vertical, 12)
-        .cornerRadius(20)
+        .padding(.vertical, Constant.Spacing.xSmall)
+        .cornerRadius(Constant.Spacing.xMedium)
     }
 }
 

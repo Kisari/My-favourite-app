@@ -13,14 +13,14 @@ struct BadgeList: View {
     var tags: [String]
 
     var body: some View {
-      WrappingHStack(tags, id: \.self, alignment: position, lineSpacing: 4) { tag in
+      WrappingHStack(tags, id: \.self, alignment: position, lineSpacing: Constant.Spacing.tiny) { tag in
             Text(tag.description.capitalized)
                 .font(.system(.caption2))
                 .foregroundStyle(Color(.white))
                 .bold()
-                .padding(.all, 4)
+                .padding(.all, Constant.Spacing.tiny)
                 .background(Color("palette-4"))
-                .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: Constant.Spacing.tiny, style: .continuous))
         }
     }
 }

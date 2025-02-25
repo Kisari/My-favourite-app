@@ -14,9 +14,9 @@ struct MenuSelectRow: View {
             item.image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
+                .frame(width: Constant.Spacing.xxLarge, height: Constant.Spacing.xxLarge)
                 .clipShape(Circle())
-                .padding(.trailing, 25)
+                .padding(.trailing, Constant.Spacing.normal)
             VStack(alignment: .leading) {
                 Text(item.name)
                     .bold()
@@ -30,5 +30,6 @@ struct MenuSelectRow: View {
 struct MenuSelectRow_Previews: PreviewProvider {
     static var previews: some View {
         MenuSelectRow(item: foodTest)
+        .background(Color(.red))
     }
 }

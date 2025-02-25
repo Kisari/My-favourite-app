@@ -13,20 +13,20 @@ struct InfoRow: View {
     var body: some View {
         Rectangle()
             .fill(Color("palette-4"))
-            .frame(width: .infinity, height: 40)
+            .frame(width: .infinity, height: Constant.Spacing.xLarge)
             .overlay(
                 HStack {
                     Text(title)
-                        .font(.system(size: 20))
+                        .font(.system(size: Constant.Spacing.xMedium))
                         .foregroundColor(.white)
                     Spacer()
                     Text(content)
-                        .font(.system(size: 28))
+                        .font(.system(size: Constant.Spacing.normal))
                         .bold()
                         .foregroundColor(.white)
                 }
             )
-            .padding([.trailing, .leading], 20)
+            .padding([.trailing, .leading], Constant.Spacing.xMedium)
     }
 }
 

@@ -25,7 +25,7 @@ struct MapView: View {
         self.locationName = locationName
         _region = State(initialValue: MKCoordinateRegion(
             center: locationCoordinates,
-            span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
+            span: MKCoordinateSpan(latitudeDelta: Constant.Style.locationScale, longitudeDelta: Constant.Style.locationScale)
         ))
         _annnotations = State(initialValue: [
             Address(name: locationName, coordinate: locationCoordinates),

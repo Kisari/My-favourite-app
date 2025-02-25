@@ -20,7 +20,7 @@ enum ImageShape: String {
       case .circle:
           return AnyShape(Circle())
       case .rectangle:
-          return AnyShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+          return AnyShape(RoundedRectangle(cornerRadius: Constant.Spacing.medium, style: .continuous))
     }
   }
 }
@@ -59,7 +59,7 @@ struct CustomImage: View {
               resolvedShape.load()
                 .stroke(Color(.white), lineWidth: 3.0)
             )
-            .shadow(radius: 10)
+            .shadow(radius: Constant.Spacing.xSmall)
             .clipShape(resolvedShape.load())
     }
 }
