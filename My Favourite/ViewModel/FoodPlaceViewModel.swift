@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+//must be class because we need change the property or data
+//can be used with struct but must use mutating
 class FoodPlaceViewModel: ObservableObject {
   struct Configuration {
     var filename: String = "MockData.json"

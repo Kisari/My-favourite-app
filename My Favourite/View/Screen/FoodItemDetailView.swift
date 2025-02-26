@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemDetails: View {
+struct FoodItemDetailView: View {
   @State var isClicked: Bool = false
   var item: FoodPlace
   var body: some View {
@@ -64,8 +64,8 @@ struct ItemDetails: View {
   }
 }
 
-struct ItemDetails_Previews: PreviewProvider {
+struct FoodItemDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    ItemDetails(item: foodTest)
+    FoodItemDetailView(item: foodTest)
   }
 }

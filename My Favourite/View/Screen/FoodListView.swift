@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct MenuList: View {
+struct FoodListView: View {
   @ObservedObject var viewModel = FoodPlaceViewModel()
 
   var body: some View {
     NavigationView {
       List(viewModel.searchingResult()) { item in
         NavigationLink {
-          MenuItem(item: item)
+          FoodItemView(item: item)
         } label: {
-          MenuSelectRow(item: item)
+          FoodSelectRow(item: item)
         }
       }
       .navigationTitle("Minh's food places")
@@ -30,6 +30,6 @@ struct MenuList: View {
 
 struct MenuList_Previews: PreviewProvider {
   static var previews: some View {
-    MenuList()
+    FoodListView()
   }
 }

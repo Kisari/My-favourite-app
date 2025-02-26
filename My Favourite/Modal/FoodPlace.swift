@@ -8,6 +8,7 @@
 import CoreLocation
 import SwiftUI
 
+//use struct as default. Because do not need to edit, just display
 struct FoodPlace: Identifiable, Codable {
   var id: Int
   var name: String

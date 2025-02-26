@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuSelectRow: View {
+struct FoodSelectRow: View {
   var item: FoodPlace
   var body: some View {
     HStack {
@@ -27,9 +27,9 @@ struct MenuSelectRow: View {
   }
 }
 
-struct MenuSelectRow_Previews: PreviewProvider {
-  static var previews: some View {
-    MenuSelectRow(item: foodTest)
-      .background(Color(.red))
-  }
-}
+//struct MenuSelectRow_Previews: PreviewProvider {
+//  static var previews: some View {
+//    MenuSelectRow(item: foodTest)
+//      .background(Color(.red))
+//  }
+//}

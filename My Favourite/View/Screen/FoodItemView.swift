@@ -8,7 +8,7 @@
 import CoreLocation
 import SwiftUI
 
-struct MenuItem: View {
+struct FoodItemView: View {
   let item: FoodPlace
   var body: some View {
     ZStack {
@@ -39,7 +39,8 @@ struct MenuItem: View {
                   InfoRow(title: "Walking time", content: "asd")
                   InfoRow(title: "Distance", content: "asd")
                     .padding(.bottom, Constant.Spacing.xMedium)
-                  NavigationLink(destination: ItemDetails(item: item).navigationBarBackButtonHidden(true)) {
+                  NavigationLink(destination: FoodItemDetailView(item: item)
+                    .navigationBarBackButtonHidden(true)) {
                     Text("Explore!")
                       .frame(width: 300, height: 50)
                       .background(Color(.red))
@@ -61,6 +62,6 @@ struct MenuItem: View {
 
 struct MenuItem_Previews: PreviewProvider {
   static var previews: some View {
-    MenuItem(item: foodTest)
+    FoodItemView(item: foodTest)
   }
 }

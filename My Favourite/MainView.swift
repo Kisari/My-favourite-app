@@ -45,8 +45,9 @@ struct MainView: View {
             }
             .padding(.leading, Constant.Spacing.xxLarge)
             .padding([.bottom, .top], Constant.Spacing.xMedium)
-
-            NavigationLink(destination: MenuList().navigationBarBackButtonHidden(true)) {
+            
+            //Navigate to the main view
+            NavigationLink(destination: FoodListView().navigationBarBackButtonHidden(true)) {
               Text("Start")
                 .foregroundColor(Color(.white))
                 .font(.custom("AbrilFatface-Regular", size: Constant.Spacing.normal))
