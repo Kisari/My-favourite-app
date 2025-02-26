@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct My_FavouriteApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      MainView()
     }
+  }
 }

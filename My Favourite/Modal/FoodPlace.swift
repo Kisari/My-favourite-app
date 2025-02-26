@@ -9,32 +9,32 @@ import CoreLocation
 import SwiftUI
 
 struct FoodPlace: Identifiable, Codable {
-    var id: Int
-    var name: String
-    var address: String
-    var imageName: String
-    var tags: [String]
+  var id: Int
+  var name: String
+  var address: String
+  var imageName: String
+  var tags: [String]
 
-    var image: Image {
-        Image(imageName)
-    }
+  var image: Image {
+    Image(imageName)
+  }
 
-    var content: String
-    var coordinates: Coordinates
+  var content: String
+  var coordinates: Coordinates
 
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude
-        )
-    }
+  var locationCoordinate: CLLocationCoordinate2D {
+    CLLocationCoordinate2D(
+      latitude: coordinates.latitude,
+      longitude: coordinates.longitude
+    )
+  }
 
-    public func getFoodTags() -> [String] {
-        return tags
-    }
+  public func getFoodTags() -> [String] {
+    return tags
+  }
 }
 
 struct Coordinates: Codable {
-    var longitude: Double
-    var latitude: Double
+  var longitude: Double
+  var latitude: Double
 }

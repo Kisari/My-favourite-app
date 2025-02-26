@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-public enum Constant{
-  public enum Style{
-    //nothing
+public enum Constant {
+  public enum Style {
+    // nothing
     public static let locationScale: Double = 0.002
     public static let viewWidth: CGFloat = UIScreen.main.bounds.width
     public static let viewHeight: CGFloat = UIScreen.main.bounds.height
   }
-  
+
   public enum Spacing {
     /// 4
     public static let tiny: CGFloat = 4
@@ -45,6 +45,3 @@ public enum Constant{
     public static let huge: CGFloat = 72
   }
 }
-
-
-

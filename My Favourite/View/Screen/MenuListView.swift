@@ -10,26 +10,26 @@ import SwiftUI
 struct MenuList: View {
   @ObservedObject var viewModel = FoodPlaceViewModel()
 
-    var body: some View {
-        NavigationView {
-            List(viewModel.searchingResult()) { item in
-                NavigationLink {
-                    MenuItem(item: item)
-                } label: {
-                    MenuSelectRow(item: item)
-                }
-            }
-            .navigationTitle("Minh's food places")
-            .navigationViewStyle(StackNavigationViewStyle())
+  var body: some View {
+    NavigationView {
+      List(viewModel.searchingResult()) { item in
+        NavigationLink {
+          MenuItem(item: item)
+        } label: {
+          MenuSelectRow(item: item)
         }
-        .searchable(text: $viewModel.searchInput,
-                    placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: "Looking for places")
+      }
+      .navigationTitle("Minh's food places")
+      .navigationViewStyle(StackNavigationViewStyle())
     }
+    .searchable(text: $viewModel.searchInput,
+                placement: .navigationBarDrawer(displayMode: .always),
+                prompt: "Looking for places")
+  }
 }
 
 struct MenuList_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuList()
-    }
+  static var previews: some View {
+    MenuList()
+  }
 }
