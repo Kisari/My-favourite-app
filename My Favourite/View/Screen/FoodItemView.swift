@@ -28,19 +28,28 @@ struct FoodItemView: View {
                   CustomImage(image: item.imageName, shape: "Circle")
                     .offset(y: -Constant.Spacing.big)
                     .padding(.bottom, -Constant.Spacing.big)
-                  Text(item.name)
-                    .font(.system(size: Constant.Spacing.normal))
-                    .bold()
-                    .foregroundColor(.white)
-                  Text(item.address)
-                    .font(.system(size: Constant.Spacing.xMedium))
-                    .foregroundColor(.white)
-                    .padding(.bottom, Constant.Spacing.xLarge)
-                  InfoRow(title: "Walking time", content: "asd")
-                  InfoRow(title: "Distance", content: "asd")
-                    .padding(.bottom, Constant.Spacing.xMedium)
+
+                  VStack(){
+                    Text(item.name)
+                      .font(.system(size: Constant.Spacing.normal))
+                      .bold()
+                      .foregroundColor(.white)
+
+                    Text(item.address)
+                      .font(.system(size: Constant.Spacing.xMedium))
+                      .foregroundColor(.white)
+                  }
+                  .padding(.bottom, Constant.Spacing.large)
+
+                  VStack(){
+                    InfoRow(title: "Walking time", content: "1 hour 35 mins")
+
+                    InfoRow(title: "Distance", content: "123 m")
+                  }
+                  
                   NavigationLink(destination: FoodItemDetailView(item: item)
-                    .navigationBarBackButtonHidden(true)) {
+                    .navigationBarBackButtonHidden(true))
+                  {
                     Text("Explore!")
                       .frame(width: 300, height: 50)
                       .background(Color(.red))
@@ -48,6 +57,7 @@ struct FoodItemView: View {
                       .bold()
                       .clipShape(RoundedRectangle(cornerRadius: Constant.Spacing.xMedium, style: .continuous))
                   }
+                  .padding(.top, Constant.Spacing.normal)
                 },
                 alignment: .top
               )

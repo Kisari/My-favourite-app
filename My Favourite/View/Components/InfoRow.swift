@@ -15,7 +15,7 @@ struct InfoRow: View {
       .fill(Color("palette-4"))
       .frame(width: Constant.Style.viewWidth, height: Constant.Spacing.xLarge)
       .overlay(
-        HStack {
+        HStack (){
           Text(title)
             .font(.system(size: Constant.Spacing.xMedium))
             .foregroundColor(.white)
@@ -25,8 +25,8 @@ struct InfoRow: View {
             .bold()
             .foregroundColor(.white)
         }
+          .padding(.horizontal, Constant.Spacing.medium)
       )
-      .padding([.trailing, .leading], Constant.Spacing.xMedium)
   }
 }
 
