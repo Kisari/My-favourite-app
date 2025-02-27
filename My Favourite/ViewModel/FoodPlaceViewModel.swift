@@ -14,7 +14,7 @@ class FoodPlaceViewModel: ObservableObject {
     var filename: String = "MockData.json"
   }
 
-  private(set) var config: Configuration
+  private var config: Configuration
   @Published var foodPlaces: [FoodPlace] = .init()
   @Published var searchInput = ""
 
