@@ -8,23 +8,35 @@
 import SwiftUI
 
 struct FoodListView: View {
-  @ObservedObject var viewModel = FoodPlaceViewModel()
+  @StateObject var viewModel = FoodPlaceViewModel()
 
   var body: some View {
     NavigationView {
-      List(viewModel.searchingResult()) { item in
-        NavigationLink {
-          FoodItemView(item: item)
-        } label: {
-          FoodSelectRow(item: item)
+      ZStack {
+        Color(.systemGray6)
+          .ignoresSafeArea()
+        VStack {
+          if viewModel.isLoading && !viewModel.searchInput.isEmpty {
+            ProgressView("Loading...")
+              .progressViewStyle(CircularProgressViewStyle())
+              .padding()
+              .frame(maxWidth: Constant.Style.viewWidth, maxHeight: Constant.Style.viewHeight)
+          } else {
+            List(viewModel.searchInput.isEmpty ? viewModel.foodPlaces : viewModel.searchData) { item in
+              NavigationLink {
+                FoodItemView(viewModel: viewModel, item: item)
+              } label: {
+                FoodSelectRow(viewModel: viewModel, item: item)
+              }
+            }
+          }
         }
+        .navigationTitle("Minh's food places")
       }
-      .navigationTitle("Minh's food places")
-      .navigationViewStyle(StackNavigationViewStyle())
+      .searchable(text: $viewModel.searchInput,
+                  placement: .navigationBarDrawer(displayMode: .always),
+                  prompt: "Looking for places")
     }
-    .searchable(text: $viewModel.searchInput,
-                placement: .navigationBarDrawer(displayMode: .always),
-                prompt: "Looking for places")
   }
 }
 

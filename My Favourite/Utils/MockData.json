@@ -6,6 +6,7 @@
         "imageName": "image-1",
         "tags": ["authentic", "family-friendly", "local produce"],
         "content": "Lotus Garden Restaurant has been a favorite for locals and tourists alike since 2005. Known for our commitment to healthy and fresh ingredients, we pride ourselves on using locally sourced products from the finest farmers and artisans across Vietnam. Our chefs expertly craft both popular and lesser-known Vietnamese dishes, offering an immersive culinary experience that reflects the heart of Vietnamese culture.\nOur restaurant's decor is inspired by traditional Vietnamese homes, creating a warm and welcoming atmosphere for families and groups. Whether you're craving a classic pho or looking to try something unique, we ensure every meal is made with love and care.\nCome and discover the true flavors of Vietnam at Lotus Garden, where every dish tells a story of tradition and taste.",
+        "isLike": false,
         "coordinates": {
             "longitude": 106.689715,
             "latitude": 20.871432
@@ -18,6 +19,7 @@
         "imageName": "image-1",
         "tags": ["coffee", "cozy", "urban"],
         "content": "Saigon Essence Cafe is a cozy retreat in the heart of Ho Chi Minh City, offering an extensive range of specialty coffees and traditional Vietnamese beverages. Since opening in 2010, we’ve aimed to bring the best of local coffee culture to both locals and visitors, providing a warm and inviting space to relax or work. Our cafe is known for its artisanal coffee blends, handcrafted from beans sourced from the Highlands of Vietnam.\nEnjoy a cup of rich Vietnamese coffee paired with freshly baked pastries in a space that reflects the lively and dynamic energy of Saigon. Whether you're a coffee connoisseur or new to Vietnamese coffee culture, Saigon Essence offers a taste of Saigon in every sip.",
+        "isLike": false,
         "coordinates": {
             "longitude": 106.700236,
             "latitude": 10.762140
@@ -30,6 +32,7 @@
         "imageName": "image-1",
         "tags": ["fine dining", "romantic", "local heritage"],
         "content": "Nestled in the heart of Da Nang, The Bamboo Grove is a fine-dining restaurant that blends modern elegance with traditional Vietnamese elements. Opened in 2015, we specialize in creating dishes that are both visually stunning and bursting with flavor. Every dish is inspired by the rich cultural heritage of Vietnam, with an emphasis on fresh, sustainable ingredients sourced from local farms.\nOur beautiful bamboo-inspired decor and serene ambiance make it the perfect spot for a romantic dinner or a special celebration. At The Bamboo Grove, we invite you to indulge in a culinary journey that showcases the diversity and depth of Vietnamese cuisine.",
+        "isLike": false,
         "coordinates": {
             "longitude": 108.212172,
             "latitude": 16.053824
@@ -42,6 +45,7 @@
         "imageName": "image-1",
         "tags": ["seafood", "beachfront", "fresh catch"],
         "content": "Golden Lotus Seafood, located right by the beach in Phu Quoc, offers an unbeatable dining experience with the freshest seafood available. Established in 2018, we are committed to serving only the finest catches from local fishermen, ensuring each dish is as fresh as it is flavorful. Our menu features a wide array of Vietnamese seafood dishes, from grilled lobsters to traditional fish soups, all crafted to highlight the natural flavors of the ocean.\nWhether you're dining with family or friends, our relaxing seaside location and welcoming staff promise a memorable experience that captures the essence of coastal living.",
+        "isLike": false,
         "coordinates": {
             "longitude": 103.975651,
             "latitude": 10.282438

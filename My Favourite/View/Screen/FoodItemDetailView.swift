@@ -9,12 +9,14 @@ import SwiftUI
 
 // fileprivate same as private (at file level)
 struct FoodItemDetailView: View {
-  @State var toggleLike: Bool = true
+  @ObservedObject var viewModel: FoodPlaceViewModel
+  @State var toggleLike: Bool = false
+  
   var item: FoodPlace
   var body: some View {
     HStack {
       VStack(alignment: .leading, spacing: Constant.Spacing.xSmall) {
-        FoodItemTitleSection(isClicked: $toggleLike, item: item)
+        FoodItemTitleSection(viewModel: viewModel, isClicked: $toggleLike, item: item)
         FoodItemDetailSection(item: item)
       }
     }
@@ -23,6 +25,7 @@ struct FoodItemDetailView: View {
   }
   
   private struct FoodItemTitleSection: View {
+    @ObservedObject var viewModel: FoodPlaceViewModel
     @Binding var isClicked: Bool
     var item: FoodPlace
     var body: some View {
@@ -45,9 +48,10 @@ struct FoodItemDetailView: View {
             })
             .font(.system(size: Constant.Spacing.normal))
             Button(action: {
-              isClicked = !isClicked
+              isClicked = !item.isLike
+              viewModel.toggleLike(for: item)
             }, label: {
-              isClicked ?
+              item.isLike ?
                 Image(systemName: "heart.fill")
                 :
                 Image(systemName: "heart")
@@ -80,8 +84,8 @@ struct FoodItemDetailView: View {
   }
 }
 
-struct FoodItemDetailView_Previews: PreviewProvider {
-  static var previews: some View {
-    FoodItemDetailView(item: foodTest)
-  }
-}
+//struct FoodItemDetailView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    FoodItemDetailView(item: foodTest)
+//  }
+//}
