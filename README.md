@@ -9,4 +9,6 @@ The project is just a simple application which using SwiftUI to display favorite
 git clone https://github.com/Kisari/My-favourite-app.git
 ```
 
-Run the Project with Xcode
+## Run the project
+Run the Project with Xcode or **Cmd + R**
+Test the Project with **Cmd + U**
