@@ -19,6 +19,8 @@
 		117DC16B2A77930100C14E17 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC16A2A77930100C14E17 /* InfoRow.swift */; };
 		117DC16D2A78BB4100C14E17 /* View+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DC16C2A78BB4100C14E17 /* View+Exts.swift */; };
 		11968B7B2D72BCEC00F132F2 /* SearchDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11968B7A2D72BCEC00F132F2 /* SearchDebouncer.swift */; };
+		11A50CE12D740B030044E868 /* FoodUserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A50CE02D740B030044E868 /* FoodUserDefaultStorage.swift */; };
+		11A50CE42D740BE10044E868 /* FoodStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A50CE32D740BE10044E868 /* FoodStorageProtocol.swift */; };
 		11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1826E2A679735001CF159 /* My_FavouriteApp.swift */; };
 		11B182712A679735001CF159 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B182702A679735001CF159 /* MainView.swift */; };
 		11B182732A679736001CF159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B182722A679736001CF159 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		117DC16A2A77930100C14E17 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		117DC16C2A78BB4100C14E17 /* View+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Exts.swift"; sourceTree = "<group>"; };
 		11968B7A2D72BCEC00F132F2 /* SearchDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDebouncer.swift; sourceTree = "<group>"; };
+		11A50CE02D740B030044E868 /* FoodUserDefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodUserDefaultStorage.swift; sourceTree = "<group>"; };
+		11A50CE32D740BE10044E868 /* FoodStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStorageProtocol.swift; sourceTree = "<group>"; };
 		11B1826B2A679735001CF159 /* My Favourite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Favourite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B1826E2A679735001CF159 /* My_FavouriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_FavouriteApp.swift; sourceTree = "<group>"; };
 		11B182702A679735001CF159 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				11D4B1922A6A296B006AD18C /* FoodPlace.swift */,
+				11A50CE02D740B030044E868 /* FoodUserDefaultStorage.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -140,9 +145,25 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		11A50CE22D740BCF0044E868 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				11A50CE32D740BE10044E868 /* FoodStorageProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		11A50CE52D7410860044E868 /* My Favourite Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Favourite Tests";
+			sourceTree = "<group>";
+		};
 		11B182622A679735001CF159 = {
 			isa = PBXGroup;
 			children = (
+				11A50CE52D7410860044E868 /* My Favourite Tests */,
 				11B1826D2A679735001CF159 /* My Favourite */,
 				11B1826C2A679735001CF159 /* Products */,
 			);
@@ -159,6 +180,7 @@
 		11B1826D2A679735001CF159 /* My Favourite */ = {
 			isa = PBXGroup;
 			children = (
+				11A50CE22D740BCF0044E868 /* Protocol */,
 				11968B792D72BCCB00F132F2 /* Helper */,
 				113347302D6C5ACC00F1A6EE /* ViewModel */,
 				113622A62D6C5A5C0090C73F /* Extension */,
@@ -283,7 +305,9 @@
 				11968B7B2D72BCEC00F132F2 /* SearchDebouncer.swift in Sources */,
 				11D4B18F2A6A25B1006AD18C /* FoodItemView.swift in Sources */,
 				117DC1672A77755A00C14E17 /* CustomImage.swift in Sources */,
+				11A50CE42D740BE10044E868 /* FoodStorageProtocol.swift in Sources */,
 				11019BC22A68FEF70023B0B4 /* FoodListView.swift in Sources */,
+				11A50CE12D740B030044E868 /* FoodUserDefaultStorage.swift in Sources */,
 				117DC1692A777DEB00C14E17 /* FoodItemDetailView.swift in Sources */,
 				117DC16B2A77930100C14E17 /* InfoRow.swift in Sources */,
 				11B1826F2A679735001CF159 /* My_FavouriteApp.swift in Sources */,

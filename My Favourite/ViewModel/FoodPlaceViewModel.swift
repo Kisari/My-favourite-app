@@ -14,9 +14,10 @@ class FoodPlaceViewModel: ObservableObject {
     var filename: String = "MockData.json"
     var searchingDelaytime: Double = 0.5
     var searchingDebouncer: SearchDebouncer = .init()
+    var foodStorage: FoodUserDefaultStorage = FoodUserDefaultStorage()
   }
 
-  private var config: Configuration
+  private var config: Configuration = .init()
   @Published var foodPlaces: [FoodPlace] = .init()
   @Published var searchData: [FoodPlace] = .init()
   @Published var isLoading: Bool = false
@@ -27,11 +28,11 @@ class FoodPlaceViewModel: ObservableObject {
   }
 
   init() {
-    // Initialize the config
-    config = Configuration()
-
     // Getting stored data from json file
     foodPlaces = decodeJsonData()
+    
+    // Initialize the config
+    config = Configuration()
   }
 
   private func decodeJsonData<T: Decodable & Collection>() -> T where T.Element: Identifiable {
@@ -101,9 +102,11 @@ class FoodPlaceViewModel: ObservableObject {
   // Toggle like/unlike
   public func toggleLike(for foodPlace: FoodPlace) {
     if let index = foodPlaces.firstIndex(where: { $0.id == foodPlace.id }) {
+      //Update the UI
       foodPlaces[index].isLike.toggle()
-      UserDefaults.standard.set(foodPlaces[index].isLike, forKey: String(foodPlaces[index].id))
     }
+    //Save to the User Default
+    config.foodStorage.toogleLike(foodPlace)
   }
 }
 
