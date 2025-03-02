@@ -30,7 +30,7 @@ struct FoodSelectRow: View {
       Spacer()
       
       Button(action: {
-        isClicked = !item.isLike
+        isClicked = item.isLike
         viewModel.toggleLike(for: item)
       }, label: {
         item.isLike ?

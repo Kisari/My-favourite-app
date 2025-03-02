@@ -73,7 +73,7 @@ struct FoodItemView: View {
       NavigationLink(destination: FoodItemDetailView(viewModel: viewModel, item: item)
         .navigationBarBackButtonHidden(true))
       {
-        Text("Explore!")
+        Text("Explore")
           .frame(width: 300, height: 50)
           .background(Color(.red))
           .foregroundColor(.white)

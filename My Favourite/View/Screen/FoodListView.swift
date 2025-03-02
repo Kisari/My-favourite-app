@@ -16,7 +16,7 @@ struct FoodListView: View {
         Color(.systemGray6)
           .ignoresSafeArea()
         VStack {
-          if viewModel.isLoading && !viewModel.searchInput.isEmpty {
+          if viewModel.isLoading && viewModel.searchInput.isEmpty {
             ProgressView("Loading...")
               .progressViewStyle(CircularProgressViewStyle())
               .padding()

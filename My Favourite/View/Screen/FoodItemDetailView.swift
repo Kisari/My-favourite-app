@@ -48,7 +48,7 @@ struct FoodItemDetailView: View {
             })
             .font(.system(size: Constant.Spacing.normal))
             Button(action: {
-              isClicked = !item.isLike
+              isClicked = item.isLike
               viewModel.toggleLike(for: item)
             }, label: {
               item.isLike ?
